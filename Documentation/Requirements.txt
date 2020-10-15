@@ -1,0 +1,7 @@
+The Checkers Game Engine (CGE) is a system for playing checkers against an intelligent AI opponent implemented using the
+algorithm created by K. Chellapilla and D.B. Fogel paper titled Evolving neural networks to play checkers without
+relying on expert knowledge
+
+V1 Functional Requirements:
+    1. The CGE shall implement a checkers board with movable pieces.
+        A. The checkers board shall consist of the
