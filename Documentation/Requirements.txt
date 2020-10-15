@@ -8,11 +8,16 @@ V1 Functional Requirements:
     1. The CGE shall run checkers games according to the American Checkers Federation rules
         A. Players shall be notified and prevented from violating a game rule
     2. The CGE shall implement player vs player, player vs computer, and computer vs computer modes
+        A. Mode shall be selectable at the start of a game
     3. The CGE shall have a command line and graphical interface
         A. Players shall be notified when it is their turn
         B. The CLI shall receive moves as a space separated pair of numbers representing the start and end position of
-            a piece respectively.
-        C. The CLI shall
+                a piece respectively.
+            i. Input shall be accepted one move at a time. Additional moves shall be ignored
+            ii. Input will be checked for errors and the users shall be asked to reenter input if check fails
+                I. Errors can be from invalid format or invalid moves
+                II. The CLI shall be redrawn before asking for a corrected move
+        C. The CLI shall display the game board when asking for
     4. The CGE shall store previous completed games in standard Draughts notation
         A. The game shall be notated to include tha player name, date, and result
     5. The CGE shall implement an ai to play against
