@@ -1,7 +1,36 @@
-The Checkers Game Engine (CGE) is a system for playing checkers against an intelligent AI opponent implemented using the
-algorithm created by K. Chellapilla and D.B. Fogel paper titled Evolving neural networks to play checkers without
-relying on expert knowledge
+Problem statement:
+    The Checkers Game Engine(CGE) is a system for playing checkers against an intelligent AI opponent implemented using
+    the algorithm described by K. Chellapilla and D.B. Fogel paper titled Evolving Neural Networks to Play Checkers
+    Without Relying on Expert Knowledge. The system will be a playable checkers game consisting of both command line and
+    graphical interfaces and will store games for later review.
 
 V1 Functional Requirements:
-    1. The CGE shall implement a checkers board with movable pieces.
-        A. The checkers board shall consist of the
+    1. The CGE shall run checkers games according to the American Checkers Federation rules
+        A. Players shall be notified and prevented from violating a game rule
+    2. The CGE shall implement player vs player, player vs computer, and computer vs computer modes
+    3. The CGE shall have a command line and graphical interface
+        A. Players shall be notified when it is their turn
+        B. The CLI shall receive moves as a space separated pair of numbers representing the start and end position of
+            a piece respectively.
+        C. The CLI shall
+    4. The CGE shall store previous completed games in standard Draughts notation
+        A. The game shall be notated to include tha player name, date, and result
+    5. The CGE shall implement an ai to play against
+        A. The ai shall be a neural network
+        B. The ai shall be trainable
+    6. The CGE shall allow the viewing of previous games for review
+
+V1 Non Functional Requirements:
+    1. The system shall use the OLCPixelGameEngine as a graphics library
+    2. The system shall store the board as a size 32 array
+    3. The system shall be implemented in C++ as a desktop application
+    4. The system shall store ai weights and biases in a plain text file
+    5. The system shall store games as portable draughts notation(.PDN) files using the 3.0 standard
+    6. The system shall train the ai using the fitness function genetic algorithm
+        A. To speed up training, threading shall be used to train the system
+
+
+Potential Enhancements
+    1. AI analysis of previous games
+    2. Live AI analysis of current game
+    3. AI difficulty levels
