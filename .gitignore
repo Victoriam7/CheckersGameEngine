@@ -3,7 +3,8 @@ cmake-build-debug/*
 Checkers
 NN_Paper.pdf
 WCDF_Revised_Rules.doc
-.~lock*
-*.draw.io
-*.odt
-*/Requirements.txt
+
+Documentation/
+    *.odt
+    .lock*
+    Requirements.txt
