@@ -2,7 +2,7 @@
 	olcPixelGameEngine.h
 
 	+-------------------------------------------------------------+
-	|           OneLoneCoder Pixel Game Engine v2.08              |
+	|           OneLoneCoder Pixel game Engine v2.08              |
 	|  "What do you need? Pixels... Lots of Pixels..." - javidx9  |
 	+-------------------------------------------------------------+
 
@@ -330,7 +330,7 @@ namespace olc
     class PixelGameEngine;
     class Sprite;
 
-    // Pixel Game Engine Advanced Configuration
+    // Pixel game Engine Advanced Configuration
     constexpr uint8_t  nMouseButtons = 5;
     constexpr uint8_t  nDefaultAlpha = 0xFF;
     constexpr uint32_t nDefaultPixel = (nDefaultAlpha << 24);
@@ -2646,7 +2646,7 @@ namespace olc
 		{
 			nLastFPS = nFrameCount;
 			fFrameTimer -= 1.0f;
-			std::string sTitle = "OneLoneCoder.com - Pixel Game Engine - " + sAppName + " - FPS: " + std::to_string(nFrameCount);
+			std::string sTitle = "OneLoneCoder.com - Pixel game Engine - " + sAppName + " - FPS: " + std::to_string(nFrameCount);
 			platform->SetWindowTitle(sTitle);
 			nFrameCount = 0;
 		}
@@ -2781,7 +2781,7 @@ namespace olc
 			glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH | GLUT_RGBA);
 
 			// Creates the window and the OpenGL context for it
-			glutCreateWindow("OneLoneCoder.com - Pixel Game Engine");
+			glutCreateWindow("OneLoneCoder.com - Pixel game Engine");
 
 			glEnable(GL_TEXTURE_2D); // Turn on texturing
 			glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
@@ -3583,7 +3583,7 @@ namespace olc
 			XSetWMProtocols(olc_Display, olc_Window, &wmDelete, 1);
 
 			XMapWindow(olc_Display, olc_Window);
-			XStoreName(olc_Display, olc_Window, "OneLoneCoder.com - Pixel Game Engine");
+			XStoreName(olc_Display, olc_Window, "OneLoneCoder.com - Pixel game Engine");
 
 			if (bFullScreen) // Thanks DragonEye, again :D
 			{
