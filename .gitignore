@@ -4,7 +4,5 @@ Checkers
 NN_Paper.pdf
 WCDF_Revised_Rules.doc
 
-Documentation/
-    *.odt
-    .lock*
-    Requirements.txt
+Documentation/*.odt
+Documentation/*.txt
