@@ -5,5 +5,5 @@ NN_Paper.pdf
 WCDF_Revised_Rules.doc
 .~lock*
 *.draw.io
-Documentation/Design Document.odt
-Documentation/Requirements.txt
+*.odt
+*/Requirements.txt
