@@ -15,6 +15,7 @@
 struct Move
 {
     bool color;
+    bool isJump;
     std::pair<int, int> move;
 
     std::string toString(){
