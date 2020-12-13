@@ -12,15 +12,24 @@
 #include "View.h"
 
 
-class GUI : public olc::PixelGameEngine
+class GUI : public olc::PixelGameEngine, public View
 {
 public:
     GUI();
 
+    /// See view.h for details
+    void setup();
+
+    /// See view.h for details
+    void render();
+
+    /// See view.h for details
+    void run();
+
     // Called on creation of object
     bool OnUserCreate() override;
 
-    // game loop
+    // Game loop
     bool OnUserUpdate(float fElapsedTime) override;
 };
 

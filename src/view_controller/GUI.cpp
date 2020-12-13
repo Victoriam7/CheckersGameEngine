@@ -24,3 +24,18 @@ bool GUI::OnUserUpdate(float fElapsedTime)
             Draw(x, y, olc::Pixel(rand() % 256, rand() % 256, rand()% 256));
     return true;
 }
+
+void GUI::render()
+{
+
+}
+
+void GUI::run()
+{
+    this->Start();
+}
+
+void GUI::setup()
+{
+    this->Construct(256, 240, 1, 1);
+}

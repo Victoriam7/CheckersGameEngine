@@ -1,0 +1,6 @@
+/// game/modes/ComputerVsComputer.cpp
+///
+/// @author Brendan Grau
+/// License: GNU GPLv3
+///////////////////////////////////////////////////////////////////////////////
+#include "ComputerVsComputer.h"

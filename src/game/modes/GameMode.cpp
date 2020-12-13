@@ -1,0 +1,9 @@
+/// game/modes/GameMode.c
+///
+/// Base class for various game modes
+///
+/// @author Brendan Grau
+/// License: GNU GPLv3
+///////////////////////////////////////////////////////////////////////////////
+
+#include "GameMode.h"

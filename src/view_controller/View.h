@@ -16,8 +16,13 @@ class View
 protected:
     GameManager gameManager;
 
+
+
 public:
     View();
+
+    /// Setup function for views
+    virtual void setup() = 0;
 
     /// Function to let the view know model to redraw scene
     virtual void render() = 0;
