@@ -19,7 +19,7 @@ struct Move
     std::pair<int, int> move;
 
     std::string toString(){
-        return move.first + " " + move.second;
+        return std::to_string(move.first) + " " + std::to_string(move.second);
     }
 };
 

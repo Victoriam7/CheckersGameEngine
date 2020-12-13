@@ -1,4 +1,3 @@
-CMakeLists.txt
 cmake-build-debug/*
 Checkers
 NN_Paper.pdf
@@ -8,3 +7,6 @@ Documentation/*.odt
 Documentation/*.txt
 Documentation/*.drawio
 Documentation/.~lock.Design Document.odt#
+
+cmake-build-debug/*
+cmake-build-debug-coverage/*
