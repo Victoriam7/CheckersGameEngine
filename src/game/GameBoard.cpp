@@ -27,41 +27,23 @@ std::string* GameBoard::toString()
         for (int j = 0; j < BOARD_WIDTH; j++)
         {
             int piece = (*board)[i * BOARD_WIDTH + j];
-            s->append("| ");
+
+            s->append("|█");
+
             if(piece == 0)
-                s->append(" ");
+                s->append("█");
             else if(piece > 0)
                 s->append("B");
             else
                 s->append("W");
             if(piece == 0)
-                s->append(" ");
+                s->append("█");
             else if(abs(piece) == 1)
                 s->append("P");
             else
                 s->append("K");
-            switch()
-            {
-                case 0:
-                    s->append("|    |    ");
-                    break;
 
-                case 1:
-                    s->append("| BP |    ");
-                    break;
-
-                case 2:
-                    s->append("| BK |    ");
-                    break;
-
-                case -1:
-                    s->append("| WP |    ");
-                    break;
-
-                case -2:
-                    s->append("| WK |    ");
-                    break;
-            }
+            s->append("█|    ");
         }
         if(i % 2 != 0)
             s->append("|");
@@ -71,5 +53,10 @@ std::string* GameBoard::toString()
             s->append("\n└────┴────┴────┴────┴────┴────┴────┴────┘\n");
     }
     return s;
+}
+
+std::vector<Move*>* GameBoard::getValidMoves()
+{
+    return nullptr;
 }
 

@@ -12,5 +12,7 @@
 
 TEST_CASE("Test GameBoard toString"){
     GameBoard board;
-    std::cout << *(board.toString());
+    std::string* s = board.toString();
+    std::cout << *(s);
+    delete s;
 }

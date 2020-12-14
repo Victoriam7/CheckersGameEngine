@@ -19,6 +19,8 @@
 #include <vector>
 #include <string>
 
+#include "Move.h"
+
 class GameBoard
 {
 private:
@@ -32,6 +34,8 @@ public:
 
     /// Convert board to a string
     std::string* toString();
+
+    std::vector<Move*>* getValidMoves();
 };
 
 
