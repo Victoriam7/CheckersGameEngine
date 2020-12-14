@@ -8,12 +8,9 @@
 
 #include <iostream>
 #include "../catch_amalgamated.hpp"
+#include "../../src/game/GameBoard.h"
 
-#include "../../src/game/Move.h"
-
-TEST_CASE("Test Move toString")
-{
-    Move move;
-    move.move = std::pair<int, int>{14, 7};
-    REQUIRE(move.toString() == "14 7");
+TEST_CASE("Test GameBoard toString"){
+    GameBoard board;
+    std::cout << *(board.toString());
 }
